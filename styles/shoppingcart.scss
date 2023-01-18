@@ -1,0 +1,137 @@
+.shoppingcart {
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    .table {
+        width: 90%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tableHead {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .tableRowImage {
+            text-align: center;
+        }
+
+        .tableRowName {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .tableRowPrice {
+            text-align: center;
+            color: #e7ab3c;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .tableRowQnt {
+            text-align: center;
+
+            .iconButton {
+                border-radius: 0px;
+                border: 1px solid grey
+            }
+
+            .quantity {
+                border-top: 1px solid grey;
+                border-bottom: 1px solid grey;
+                padding: 10px
+            }
+
+        }
+
+        .tableRow {
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .shoppingcartBottom {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 35px;
+
+        .shoppingcartBottomText {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+            .continueShopping {
+                border: 2px solid #ebebeb;
+                padding: 10px;
+                color: #b2b2b2;
+                cursor: pointer;
+            }
+
+            .updateCart {
+                border: 2px solid #ebebeb;
+                padding: 10px;
+                background-color: #f3f3f3;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            .code {
+                border: 2px solid #ebebeb;
+                padding: 5px;
+                position: relative;
+                align-items: center;
+                margin-top: 10px;
+
+                .codeInput {
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                }
+
+                .applyBtn {
+                    position: absolute;
+                    color: black;
+                    font-weight: bold;
+                    right: 10px;
+                }
+            }
+
+        }
+
+        .shoppingcartBottomTotal {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ebebeb;
+            margin-top: 20px;
+
+            .totalText {
+                display: flex;
+                justify-content: space-between;
+                background-color: #f3f3f3;
+                padding: 13px;
+                border-bottom: 1px solid white;
+            }
+
+            .checkout {
+                background-color: #252525;
+                color: white;
+                justify-content: center;
+                text-align: center;
+                padding: 13px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

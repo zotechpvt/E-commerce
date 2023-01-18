@@ -1,0 +1,16 @@
+.faqs {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+
+    .faqsQuestion {
+        display: flex;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .faqsAnswer {
+        padding-bottom: 20px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,40 @@
+.bannerContainer {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px;
+    z-index: 99;
+
+    .banner {
+        width: 85%;
+        height: 250px;
+        position: relative;
+        // background-image: url('/manBanner.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bannerItem {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerText {
+        width: 90px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 3px
+    }
+}

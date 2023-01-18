@@ -1,0 +1,31 @@
+.benefitItems {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Items {
+        border: 1px solid lightgrey;
+        display: flex;
+        align-items: center;
+        padding: 20px 50px;
+        height: auto;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+
+        .ItemsIcon {
+            color: #e7ab3c;
+            margin: auto 20px;
+        }
+
+        .ItemsText {
+            padding-left: 20px;
+
+            .subtitle1 {
+                font-weight: bold;
+            }
+        }
+    }
+}

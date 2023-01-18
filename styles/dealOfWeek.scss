@@ -1,0 +1,75 @@
+.dealOfWeek {
+    width: 95%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px ;
+    margin: auto;
+
+    .dealContain {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+
+        .dealTitle {
+            margin-top: 40px;
+            // border-bottom: 2px solid yellowgreen;
+            font-weight: 300;
+            display: inline-block;
+            padding-bottom: 5px;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 30%;
+                height: 1px;
+                bottom: 0;
+                left: 35%;
+                border-bottom: 2px solid #e7ab3c;
+            }
+        }
+
+
+        .dealDetails {
+            margin-top: 25px;
+            width: 70%;
+        }
+
+        .dealPrice {
+            display: flex;
+            margin-top: 25px;
+            align-items: center;
+        }
+
+        .dealTime {
+            display: flex;
+            width: 70%;
+            margin-top: 35px;
+            justify-content: space-evenly;
+        }
+
+        .time {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 15px 20px;
+        }
+
+        .button {
+            background-color: #e7ab3c;
+            padding-bottom: 40px;
+        }
+    }
+
+    .dealImage {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+}

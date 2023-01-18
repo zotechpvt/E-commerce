@@ -1,0 +1,150 @@
+.womenBanner {
+  background-color: white;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 40px 20px;
+
+  .ImageContainer {
+    background-image: url("/womenBanner2.jpg");
+    height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .subtitle {
+      border-bottom: 2px solid;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .womenBannerSlider {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .womenBannerSliderList {
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-evenly;
+
+      .ListItem {
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+
+    .sliderComponent {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      text-align: center;
+
+      .slider {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        // margin: 0px 10px;
+        text-align: center;
+        display: flex;
+        // padding: 0px 10px;
+
+        .sliderImage {
+          height: 300px;
+          background-color: lightgray;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
+          position: relative;
+
+          .image {
+            border-radius: 10px;
+          }
+        }
+
+        .animationFavrite {
+          position: absolute;
+          top: 0px;
+          right: 10px;
+          display: flex;
+          cursor: pointer;
+          animation: favarite 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @keyframes favarite {
+          0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 0;
+          }
+
+          100% {
+            -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+            opacity: 1;
+          }
+        }
+
+        .animation {
+          position: absolute;
+          bottom: 0px;
+          display: flex;
+          animation: options 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          width: 95%;
+          cursor: pointer;
+
+          .cart {
+            width: 20%;
+            background-color: #e7ab3c;
+            margin: 0px 5px;
+            padding: 5px;
+          }
+
+          .view {
+            display: flex;
+            justify-content: center;
+            color: black;
+            width: 60%;
+            background-color: white;
+            margin: 0px 5px;
+            padding: 5px;
+          }
+
+          .random {
+            width: 20%;
+            background-color: #e7ab3c;
+            margin: 0px 5px;
+            padding: 5px;
+          }
+        }
+
+        @keyframes options {
+          0% {
+            -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+          }
+
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

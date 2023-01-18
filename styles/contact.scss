@@ -1,0 +1,64 @@
+.contact {
+    width: 100%;
+    background-color: white;
+    // display: flex;
+
+    .map {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 70px;
+    }
+
+    .contactDetails {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 50px auto 0px;
+
+        .gridItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            text-align: center;
+
+            .DetailsItems {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+
+                .DetailsItemsIcon {
+                    width: 10%;
+                    color: gray;
+                }
+
+                .DetailsItemsDetail {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 10px;
+                    text-align: left;
+                }
+            }
+
+            .TextArea {
+                display: flex;
+                justify-content: flex-start;
+                margin: auto;
+                margin-top: 20px;
+                width: 86%;
+                flex-direction: column;
+            }
+
+            .messageBtn {
+                color: white;
+                border-radius: 2px;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        }
+
+    }
+}
